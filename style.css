@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+}
+header {
+  position: relative;
+  background-color: skyblue;
+  margin: 0;
+  height: 120px;
+}
+.plane {
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  display: block;
+  width: 60px;
+  height: 24px;
+  animation: plane 60s infinite linear;
+}
+@keyframes plane {
+  0% {
+    transform: translate(-200px, 50px) rotateY(180deg) rotate(10deg) scale(1.1) ;
+  }
+  50% {
+    transform: translate(200px, 0) scale(1) rotateY(180deg) rotate(5deg);
+  }
+  100% {
+    transform: translate(500px, -25px) scale(0.95) rotateY(180deg) rotate(2deg);
+  }  
+}
+.cloud3 {
+  position: absolute;
+  top: 5px;
+  right: 300px;
+  display: block;
+  width: 85px;
+  height: 50px;
+  animation: clouds 60s linear infinite;
+}
+.cloud2 {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  display: block;
+  width: 100px;
+  height: 36px;
+  animation: clouds 60s linear infinite;
+}
+.cloud4 {
+  position: absolute;
+  top: 55px;
+  right: 160px;
+  display: block;
+  width: 60px;
+  height: 36px;
+  animation: clouds 60s linear infinite;
+}
+.cloud1 {
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  display: block;
+  width: 48px;
+  height: 34px;
+  animation: clouds 60s linear infinite;
+}
+@keyframes clouds {
+  0% {
+    transform: translateX(-100px) scale(1, 1);
+  }
+  50% {
+    transform: translateX(0) scale(1.1, 0.95);
+  }
+  100% {
+    transform: translateX(100px) scale(1, 1);
+  }
+}
+header h1 {
+  position: absolute;
+  font-size: 18px;
+  bottom: 0px;
+  right: 16px;
+}
+nav {
+  background-color: blue;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+li {
+  height: 32px;
+  margin: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+nav div {  
+  height: 32px;
+  padding-left: 16px; 
+  border: 1px solid skyblue;
+  cursor: pointer;
+}
+nav p {
+  margin: 0;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+}
+nav div:hover {
+  opacity: 0.8;
+}
+nav section {
+  display: none;
+}
+nav section.show {
+  display: block;
+}
+nav div.active {
+  height: 190px;
+}
+footer {
+  margin: 0;
+  height: 60px;
+  background-color: #432;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+  line-height: 60px;
+}
+main {
+  margin: 0;
+  padding: 32px;
+  background-color: mistyrose;
+}
+article {
+  margin-bottom: 32px;
+}
+article section {
+  margin-bottom: 32px;
+}
+article h1 {
+  font-size: 18px;
+  margin: 0;
+}
+article h2 {
+  font-size: 14px;
+  margin-top: 24px;
+}
+article p {
+  font-size: 14px;
+  line-height: 1.35rem;
+  margin: 8px;
+}
+
+article img {
+  width: 400px;
+  height: 270px;
+}
+.sample {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  margin: 16px 0;
+}
+.scratch8 {
+  width: 32px;
+  height: 24px;
+}
+.scratch12, .scratch13 {
+  width: calc((100% - 160px) / 2);
+  height: 150px;
+  margin-left: 5px;
+}
+.scratch14 {
+  width: 150px;
+  height: 100px;
+}
+.scratch15 {
+  width: 16px;
+  height: 16px;
+}
+
+.dotinstall, .progate {
+  width: 120px;
+  height: 32px;
+}
+.learnmore div {
+  display: flex;
+  align-items: center;
+}
+.learnmore div p {
+  margin-left: 32px;
+}
+.learnmore a {
+  display: block;
+}
+.book {
+  width: 80px;
+  height: 105px;
+  margin-bottom: 8px;
+}
+@media (min-width:510px) {
+  nav {
+    display: flex;
+  }
+  nav div {
+    border: none;
+  }
+  nav div:nth-child(1) {
+    width: 75px;
+  }  
+  nav div:nth-child(2) {
+    width: 205px; 
+  }  
+  nav div:nth-child(3) {
+    width: calc(100% - 280px); 
+  }
+  .scratch12, .scratch13 {
+    height: 180px;
+  } 
+}
+@media (min-width:610px) {
+  .scratch12, .scratch13 {
+    width: 185px;
+    height: 200px;
+  } 
+  .scratch14 {
+    width: 200px;
+    height: 135px;
+  }
+}
+@media (min-width: 750px) {
+  .try > div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin: 16px 0;
+  } 
+  .try div p {
+    margin-left: 32px;
+  } 
+  
+}
+@media (min-width: 950px) {
+  article {
+    width: 870px;
+    margin: 0 auto;
+  }  
+}
